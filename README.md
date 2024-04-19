@@ -27,7 +27,7 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
     sudo shutdown -h reboot
     ```
 
-5) Mounted a USB drive (which till now I had on my OpenWRT router and accessible on home network through Samba) with FLAC files of my audio CD collection:
+5) Mounted a USB drive (which till now I had on my OpenWRT router and accessible on home network through Samba) with FLAC files of my (approximately 250) audio CD collection:
     ```
     sudo mkdir /mnt/usb128gb
     sudo mount /dev/sda1 /mnt/usb128gb
