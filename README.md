@@ -57,7 +57,9 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
     sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:linux-arm
     ```
 9) With this Docker compose file loaded as stack in Portainer (and environment variables from rpi2gb.env), I now have this running on my Pi:
+
     ![containers in portainer](images/screenshots/portainer_3.png)
 
 10) CPU / Memory utilization appears to be well under control for even a Pi of this vintage (released in February 2015):
+
 ![containers in portainer](images/screenshots/top_1.png)
