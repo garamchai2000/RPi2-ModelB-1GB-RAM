@@ -63,3 +63,11 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
 10) CPU / Memory utilization appears to be well under control for even a Pi of this vintage (released in February 2015):
 
 ![containers in portainer](images/screenshots/top_1.png)
+
+11) temperature and voltage measurements look good, too.
+    ```
+    rpi21gb@rpi21gb:~ $ vcgencmd measure_temp
+    temp=43.3'C
+    rpi21gb@rpi21gb:~ $ vcgencmd measure_volts
+    volt=1.2000V
+    ```
