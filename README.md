@@ -45,7 +45,18 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
 7) Installed and configured Samba so that the files on USB drive are accessible on home network:
     ```
     sudo apt install samba -y
-    modified /etc/samba/smb.conf
+    # [music]
+    #    comment = All My Music
+    #    path = /mnt/usb128gb/music
+    #    browseable = yes
+    #    read only = yes
+    #    guest ok = yes
+    #
+    # [nobody]
+    #    comment = so as to not display
+    #    browseable = no
+    # added above 10 lines to the end of /etc/samba/smb.conf
+    vi /etc/samba/smb.conf
     sudo service smbd restart
     sudo apt install ufw
     sudo ufw allow samba
