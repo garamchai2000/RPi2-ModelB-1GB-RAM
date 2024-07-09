@@ -29,6 +29,8 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
 
 5) Mounted a USB drive (which till now I had on my OpenWRT router and accessible on home network through Samba) with FLAC files of my (approximately 250) audio CD collection:
     ```
+    # if needed, to add, delete, or modify disk partitions
+    # sudo fdisk /dev/sda 
     sudo mkdir /mnt/usb128gb
     sudo mount /dev/sda1 /mnt/usb128gb
     lsblk -d -fs /dev/sda1 #use info from this command in the next step
