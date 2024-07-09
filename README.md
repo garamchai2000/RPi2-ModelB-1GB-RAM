@@ -24,7 +24,7 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
     sudo systemctl start NetworkManager
     nmcli device show eth0
     sudo nmtui edit “Wired connection 1” # Pi / Gateway / Router IP Address are set here
-    sudo shutdown -h reboot
+    sudo shutdown -h reboot # if that doesn't work, try: sudo shutdown -r now
     ```
 
 5) Mounted a USB drive (which till now I had on my OpenWRT router and accessible on home network through Samba) with FLAC files of my (approximately 250) audio CD collection:
