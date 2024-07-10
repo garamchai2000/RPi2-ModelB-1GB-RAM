@@ -12,7 +12,7 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
 
     ```ssh rpi21gb@192.168.1.64```
 
-3) updated packages
+3) updated packages. (the following update / upgrade / autoremove can be run later also when the system needs to be updated with the latest Docker packages and/or other packages)
 
     ```
     sudo apt update && sudo apt upgrade -y && sudo apt autoremove
