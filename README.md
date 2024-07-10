@@ -85,3 +85,7 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
     rpi21gb@rpi21gb:~ $ vcgencmd measure_volts
     volt=1.2000V
     ```
+12) Portainer can be upgraded later when there is a newer version:
+    ```
+    sudo docker stop portainer && sudo docker rm portainer && sudo docker pull portainer/portainer-ce:linux-arm && sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:linux-arm
+    ```
