@@ -58,7 +58,7 @@ After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and 
     # added above 10 lines to the end of /etc/samba/smb.conf
     vi /etc/samba/smb.conf
     sudo service smbd restart
-    sudo apt install ufw
+    sudo apt install ufw -y
     sudo ufw allow samba
     ```
 8) Installed Docker and Portainer (I'll be using Portainer web UI to manage Docker containers):
