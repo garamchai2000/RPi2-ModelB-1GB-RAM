@@ -4,6 +4,8 @@
 
 I will add  the 'why' and 'what' part later, let me just get started with the 'how' part of my usage of this Raspberry Pi.
 
+(For 64-bit Pi, see [RPi4-ModelB-4GB-RAM](https://github.com/garamchai2000/RPi4-ModelB-4GB-RAM)) 
+
 After getting Raspberry Pi OS (Legacy, 32-bit) Lite image (with ssh enabled and a user/password created) on to micro SD card through Raspberry Pi Imager:
 
 1) inserted the micro SD card into Raspberry Pi, connected it to my ISP-provided router with an ethernet cable, and powered it on. After waiting for a minute or so, the Pi showed up on the admin console of the router. It was given the IP address, 192.168.1.64
