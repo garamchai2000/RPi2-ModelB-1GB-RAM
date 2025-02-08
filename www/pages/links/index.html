@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn.portainer {
+            background-color: #0078d4;
+        }
+        .btn.music {
+            background-color: #24292e;
+        }
+        .btn.adguard {
+            background-color: #0072c6;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://192.168.1.64:9000" class="btn portainer">Portainer</a>
+        <a href="http://192.168.1.64:8096" class="btn music">Music</a>
+        <a href="http://192.168.1.64:3001" class="btn adguard">Adguard</a>
+    </div>
+</body>
+</html>
+
